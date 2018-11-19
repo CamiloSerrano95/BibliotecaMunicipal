@@ -66,6 +66,41 @@ namespace BibliotecaMunicipal.Controladores
                 Con.Desconectar();
             }
         }
+        public void BuscarUsuario(string dato)
+        {
+            try{
+                Con.Conectar();
+                string sql="Select * FROM Usuarios WHERE UsuDocumento=@doc";
+                SqlCommand sc = new SqlCommand(sql, Con.Conex());
+                sc.Parameters.AddWithValue("@doc", dato);
+                sc.ExecuteNonQuery();
+
+            }catch(Exception e){
+                Console.WriteLine(e.Message);
+            }
+            finally{
+                Con.Desconectar();
+            }
+        }
+        public void EliminarUsuario(string dato)
+        {
+            try
+            {
+                Con.Conectar();
+                string sql = "DELETE * FROM Usuarios WHERE UsuDocumento = @doc";
+                SqlCommand sc = new SqlCommand(sql, Con.Conex());
+                sc.Parameters.AddWithValue("@doc", dato);
+                sc.ExecuteNonQuery();
+            }
+            catch(Exception e)
+            {
+                Console.WriteLine(e.Message);
+            }
+            finally
+            {
+                Con.Desconectar();
+            }
+        }
 
     }
 }

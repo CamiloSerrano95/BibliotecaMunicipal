@@ -53,7 +53,7 @@ namespace BibliotecaMunicipal.Controladores
                 Con.Conectar();
                 string sql = "SELECT * FROM Areas WHERE areCodigo = @areaCodigo";
                 SqlCommand cmd = new SqlCommand(sql, Con.Conex());
-                cmd.Parameters.AddWithValue("@areaCodigc", CodigoArea);
+                cmd.Parameters.AddWithValue("@areaCodigo", CodigoArea);
                 SqlDataReader dr = cmd.ExecuteReader();
 
                 if (dr.Read())
