@@ -5,7 +5,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" href="estilos/estilos.css">
     <title></title>
@@ -37,7 +37,7 @@
                   Areas
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <a class="dropdown-item" href="#">Ingresar Nueva Area</a>
+                  <a class="dropdown-item" href="Vistas/VistaAreas.aspx">Ingresar Nueva Area</a>
                   <a class="dropdown-item" href="#">Consultar Area</a>
                   <a class="dropdown-item" href="#">Modificar Area</a>
                   <a class="dropdown-item" href="#">Eliminar Area</a>

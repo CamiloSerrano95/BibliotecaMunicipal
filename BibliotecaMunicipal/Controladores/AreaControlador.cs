@@ -77,7 +77,7 @@ namespace BibliotecaMunicipal.Controladores
             return data;
         }
 
-        public void MostrarAreas(DataTable datatable)
+        public void MostrarAreas()
         {
             try
             {
@@ -86,7 +86,6 @@ namespace BibliotecaMunicipal.Controladores
                 SqlDataAdapter cmd = new SqlDataAdapter(sql, Con.Conex());
                 DataTable DT = new DataTable();
                 cmd.Fill(DT);
-                //dataGridView.DataSource = DT;
             }
             catch (Exception ex)
             {

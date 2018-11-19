@@ -8,7 +8,7 @@ namespace BibliotecaMunicipal.Modelos
 {
     public class Conexion
     {
-        SqlConnection Con = new SqlConnection("Data Source = .; Initial Catalog = BibliotecaMunicipal ; Integrated Security = true");
+        SqlConnection Con = new SqlConnection("Data Source = .; Initial Catalog = BibliotecaMunicipal; Integrated Security = true");
 
         public void Conectar()
         {
