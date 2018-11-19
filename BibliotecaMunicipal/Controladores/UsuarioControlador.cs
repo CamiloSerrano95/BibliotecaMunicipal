@@ -87,7 +87,7 @@ namespace BibliotecaMunicipal.Controladores
             try
             {
                 Con.Conectar();
-                string sql = "DELETE * FROM Usuarios WHERE UsuDocumento = @doc";
+                string sql = "DELETE FROM Usuarios WHERE UsuDocumento = @doc";
                 SqlCommand sc = new SqlCommand(sql, Con.Conex());
                 sc.Parameters.AddWithValue("@doc", dato);
                 sc.ExecuteNonQuery();
