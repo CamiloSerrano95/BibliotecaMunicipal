@@ -10,7 +10,7 @@
 <body>
     <form id="form1" runat="server">
     <div>
-        <h1>Elimina...</h1>
+        <h1>Elimina Area</h1>
         <asp:Label ID="Label1" runat="server" Text="Seleccione Area"></asp:Label>
         <asp:DropDownList ID="AreasSelect" runat="server">
         </asp:DropDownList>

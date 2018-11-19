@@ -111,6 +111,7 @@
     <Content Include="scripts\ai.0.22.9-build00167.min.js" />
     <Content Include="Vistas\Areas\VistaAreas.aspx" />
     <Content Include="Vistas\Areas\Eliminar.aspx" />
+    <Content Include="Vistas\Areas\Modificar.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -138,6 +139,13 @@
     </Compile>
     <Compile Include="Vistas\Areas\Eliminar.aspx.designer.cs">
       <DependentUpon>Eliminar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\Areas\Modificar.aspx.cs">
+      <DependentUpon>Modificar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Vistas\Areas\Modificar.aspx.designer.cs">
+      <DependentUpon>Modificar.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <PropertyGroup>
