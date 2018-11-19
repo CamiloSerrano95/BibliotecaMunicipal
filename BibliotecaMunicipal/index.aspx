@@ -6,21 +6,21 @@
 <head runat="server">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <link rel="stylesheet" href="estilos/estilos.css">
-    <title></title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="estilos/estilos.css"/>
+    <title>Areas</title>
 </head>
 <body>
     <div class="container">
         <div class="row">
             <div class="col-sm" >
-                <img src="imagenes/imagen1.jpg" alt="imagen1">
+                <img src="imagenes/imagen1.jpg" alt="imagen1"/>
             </div>
             <div class="col-sm">
                 <h1>Biblioteca Municipal</h1>
             </div>
             <div class="col-sm-3" >
-                <img src="imagenes/imagen2.jpeg" alt="imagen2">
+                <img src="imagenes/imagen2.jpeg" alt="imagen2"/>
             </div>
         </div>
 
@@ -40,7 +40,8 @@
                   <a class="dropdown-item" href="Vistas/Areas/VistaAreas.aspx">Ingresar Nueva Area</a>
                   <a class="dropdown-item" href="#">Consultar Area</a>
                   <a class="dropdown-item" href="#">Modificar Area</a>
-                  <a class="dropdown-item" href="#">Eliminar Area</a>
+                  <a class="dropdown-item" href="Vistas/Areas/Eliminar.aspx">Eliminar Area</a>
+                </div>
               </li>
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">

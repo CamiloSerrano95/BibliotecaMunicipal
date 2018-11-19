@@ -11,40 +11,34 @@ using System.Web.UI.WebControls;
 
 namespace BibliotecaMunicipal.Vistas
 {
-    public partial class VistaAreas : System.Web.UI.Page
-    {
-        Conexion Con = new Conexion();
+	public partial class Eliminar : System.Web.UI.Page
+	{
         AreaControlador AC = new AreaControlador();
         protected void Page_Load(object sender, EventArgs e)
+		{
+            LlenarAreas();
+		}
+
+        protected void EliminarArea_Click(object sender, EventArgs e)
         {
-            MostrarAreas();
+            string Codigo = AreasSelect.SelectedItem.Value.ToString();
+
+            AC.EliminarArea(Codigo);
         }
 
-        protected void Button1_Click(object sender, EventArgs e)
+        protected void LlenarAreas()
         {
-            Areas A = new Areas();
-            A.CodigoArea = CodigoArea.Text;
-            A.NombreArea = NombreArea.Text;
-            A.TiempoArea = TiempoArea.Text;
-
-            AC.InsertarArea(A);
-
-            CodigoArea.Text = "";
-            NombreArea.Text = "";
-            TiempoArea.Text = "";
-
-            MostrarAreas();
-        }
-
-        protected void MostrarAreas()
-        {
+            Conexion Con = new Conexion();
             Con.Conectar();
             string sql = "SELECT * FROM Areas";
             SqlDataAdapter cmd = new SqlDataAdapter(sql, Con.Conex());
             DataTable DT = new DataTable();
             cmd.Fill(DT);
-            this.TableAllAreas.DataSource = DT;
-            TableAllAreas.DataBind();
+
+            AreasSelect.DataTextField = "areNombre";
+            AreasSelect.DataValueField = "areCodigo";
+            AreasSelect.DataSource= DT;
+            AreasSelect.DataBind();
         }
     }
 }
