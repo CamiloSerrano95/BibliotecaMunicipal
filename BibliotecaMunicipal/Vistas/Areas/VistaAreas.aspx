@@ -24,6 +24,8 @@
     </div>
         <asp:GridView ID="TableAllAreas" runat="server">
         </asp:GridView>
+        <asp:DropDownList ID="DropDownList1" runat="server">
+        </asp:DropDownList>
     </form>
 </body>
 </html>

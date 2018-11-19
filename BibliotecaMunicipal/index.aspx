@@ -37,7 +37,7 @@
                   Areas
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <a class="dropdown-item" href="Vistas/VistaAreas.aspx">Ingresar Nueva Area</a>
+                  <a class="dropdown-item" href="Vistas/Areas/VistaAreas.aspx">Ingresar Nueva Area</a>
                   <a class="dropdown-item" href="#">Consultar Area</a>
                   <a class="dropdown-item" href="#">Modificar Area</a>
                   <a class="dropdown-item" href="#">Eliminar Area</a>
