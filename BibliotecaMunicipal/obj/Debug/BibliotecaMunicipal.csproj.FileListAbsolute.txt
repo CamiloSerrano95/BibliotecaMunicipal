@@ -100,3 +100,11 @@ C:\Users\Stiven\Desktop\ProyectoCole2.0\BibliotecaMunicipal\BibliotecaMunicipal\
 C:\Users\Stiven\Desktop\ProyectoCole2.0\BibliotecaMunicipal\BibliotecaMunicipal\obj\Debug\BibliotecaMunicipal.csproj.CopyComplete
 C:\Users\Stiven\Desktop\ProyectoCole2.0\BibliotecaMunicipal\BibliotecaMunicipal\obj\Debug\BibliotecaMunicipal.dll
 C:\Users\Stiven\Desktop\ProyectoCole2.0\BibliotecaMunicipal\BibliotecaMunicipal\obj\Debug\BibliotecaMunicipal.pdb
+C:\Users\Camilo Serrano\Desktop\BibliotecaMunicipal\BibliotecaMunicipal\bin\Newtonsoft.Json.dll
+C:\Users\Camilo Serrano\Desktop\BibliotecaMunicipal\BibliotecaMunicipal\bin\System.Net.Http.Formatting.dll
+C:\Users\Camilo Serrano\Desktop\BibliotecaMunicipal\BibliotecaMunicipal\bin\System.Web.Http.dll
+C:\Users\Camilo Serrano\Desktop\BibliotecaMunicipal\BibliotecaMunicipal\bin\System.Web.Http.WebHost.dll
+C:\Users\Camilo Serrano\Desktop\BibliotecaMunicipal\BibliotecaMunicipal\bin\Newtonsoft.Json.xml
+C:\Users\Camilo Serrano\Desktop\BibliotecaMunicipal\BibliotecaMunicipal\bin\System.Net.Http.Formatting.xml
+C:\Users\Camilo Serrano\Desktop\BibliotecaMunicipal\BibliotecaMunicipal\bin\System.Web.Http.xml
+C:\Users\Camilo Serrano\Desktop\BibliotecaMunicipal\BibliotecaMunicipal\bin\System.Web.Http.WebHost.xml

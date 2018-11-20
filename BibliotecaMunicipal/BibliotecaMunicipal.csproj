@@ -112,7 +112,6 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Global.asax" />
     <Content Include="index.aspx" />
     <Content Include="packages.config" />
     <Content Include="ApplicationInsights.config">
@@ -135,13 +134,10 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controladores\AreaControlador.cs" />
-    <Compile Include="Controladores\LibrosController.cs" />
+    <Compile Include="Controladores\DetallePrestamosControlador.cs" />
+    <Compile Include="Controladores\LibroControlador.cs" />
     <Compile Include="Controladores\UsuarioControlador.cs" />
-    <Compile Include="Global.asax.cs">
-      <DependentUpon>Global.asax</DependentUpon>
-    </Compile>
     <Compile Include="index.aspx.cs">
       <DependentUpon>index.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -151,6 +147,7 @@
     </Compile>
     <Compile Include="Modelos\Areas.cs" />
     <Compile Include="Modelos\Conexion.cs" />
+    <Compile Include="Modelos\DetallePrestamos.cs" />
     <Compile Include="Modelos\Libro.cs" />
     <Compile Include="Modelos\Usuario.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -185,7 +182,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Controllers\" />
+    <Folder Include="App_Start\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
