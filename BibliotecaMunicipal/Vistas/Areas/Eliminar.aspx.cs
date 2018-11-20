@@ -28,16 +28,9 @@ namespace BibliotecaMunicipal.Vistas
 
         protected void LlenarAreas()
         {
-            Conexion Con = new Conexion();
-            Con.Conectar();
-            string sql = "SELECT * FROM Areas";
-            SqlDataAdapter cmd = new SqlDataAdapter(sql, Con.Conex());
-            DataTable DT = new DataTable();
-            cmd.Fill(DT);
-
             AreasSelect.DataTextField = "areNombre";
             AreasSelect.DataValueField = "areCodigo";
-            AreasSelect.DataSource= DT;
+            AreasSelect.DataSource= AC.MostrarAreas();
             AreasSelect.DataBind();
         }
     }
