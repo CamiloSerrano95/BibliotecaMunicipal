@@ -47,5 +47,20 @@ namespace BibliotecaMunicipal.Vistas
             EditarNombre.Text = vector[1];
             EditarTiempo.Text = vector[2];
         }
+
+        protected void ActualizarCambios_Click(object sender, EventArgs e)
+        {
+            Areas A = new Areas();
+
+            A.CodigoArea = EditarCodigo.Text;
+            A.NombreArea = EditarNombre.Text;
+            A.TiempoArea = EditarTiempo.Text;
+
+            AC.ActualizarArea(A);
+
+            EditarCodigo.Text = "";
+            EditarNombre.Text = "";
+            EditarTiempo.Text = "";
+        }
     }
 }
