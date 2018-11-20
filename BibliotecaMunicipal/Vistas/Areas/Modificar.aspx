@@ -8,7 +8,7 @@
     <title></title>
 </head>
 <body>
-    <form id="form1" runat="server" onsubmit="return false">
+    <form id="form1" runat="server">
     <div>
         <h1>Modificar Area</h1>
         <asp:Label ID="Label1" runat="server" Text="Selecionar Area"></asp:Label>
@@ -26,7 +26,7 @@
         <asp:Label ID="Label4" runat="server" Text="Tiempo Area   "></asp:Label>
         <asp:TextBox ID="EditarTiempo" runat="server"></asp:TextBox>
         <br />
-        <asp:Button ID="ActualizarCambios" runat="server" Text="Guardar Cambios" />
+        <asp:Button ID="ActualizarCambios" runat="server" Text="Guardar Cambios" OnClick="ActualizarCambios_Click" />
 
     </div>
     </form>
