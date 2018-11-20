@@ -22,7 +22,7 @@ namespace BibliotecaMunicipal.Vistas
 
         protected void Button1_Click(object sender, EventArgs e)
         {
-            Areas A = new Areas();
+            Modelos.Areas A = new Modelos.Areas();
             A.CodigoArea = CodigoArea.Text;
             A.NombreArea = NombreArea.Text;
             A.TiempoArea = TiempoArea.Text;
