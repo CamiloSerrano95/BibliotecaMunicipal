@@ -21,7 +21,7 @@ namespace BibliotecaMunicipal.Controladores
                 sc.Parameters.AddWithValue("@dir", us.UsuDireccion);
                 sc.Parameters.AddWithValue("@tel", us.UsuTelefono);
                 sc.Parameters.AddWithValue("@mail", us.UsuCorreo);
-                sc.Parameters.AddWithValue("@est", us.UsuTelefono);
+                sc.Parameters.AddWithValue("@est", us.UsuEstado);
                 int result = sc.ExecuteNonQuery();
                 if(result == 1)
                 {
@@ -34,6 +34,64 @@ namespace BibliotecaMunicipal.Controladores
 
             }
             catch(Exception e)
+            {
+                Console.WriteLine(e.Message);
+            }
+            finally
+            {
+                Con.Desconectar();
+            }
+        }
+        public void ActualizarUsuario(Modelos.Usuario us)
+        {
+            try
+            {
+                Con.Conectar();
+                string sql = "UPDATE Usuarios SET UsuNombre = @nom, UsuDireccion = @dir, UsuTelefono = @tel, UsuCorreo = @mail, UsuEstado = @est WHERE usuDocumento = @doc";
+                SqlCommand sc = new SqlCommand(sql, Con.Conex());
+                sc.Parameters.AddWithValue("@doc", us.UsuDocumento);
+                sc.Parameters.AddWithValue("@nom", us.UsuNombre);
+                sc.Parameters.AddWithValue("@dir", us.UsuDireccion);
+                sc.Parameters.AddWithValue("@tel", us.UsuTelefono);
+                sc.Parameters.AddWithValue("@mail", us.UsuCorreo);
+                sc.Parameters.AddWithValue("@est", us.UsuEstado);
+                int result = sc.ExecuteNonQuery();
+                if (result == 1)
+                {
+                    Console.WriteLine("Usuario actualizado!");
+                }
+                else
+                {
+                    Console.WriteLine("El usuario no pudo ser actualizado");
+                }
+
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e.Message);
+            }
+            finally
+            {
+                Con.Desconectar();
+            }
+        }
+        public void EliminarUsuario(string dato)
+        {
+            try
+            {
+                Con.Conectar();
+                string sql = " Delete FROM Usuario WHERE usuDocumento = @doc ";
+                SqlCommand sc = new SqlCommand(sql, Con.Conex());
+                sc.Parameters.AddWithValue("@doc", dato);
+                int result = sc.ExecuteNonQuery();
+                if(result == 1)
+                {
+                    Console.WriteLine("Usuario Eliminado");
+                }else
+                {
+                    Console.WriteLine("Usuario no fue eliminado");
+                }
+            }catch(Exception e)
             {
                 Console.WriteLine(e.Message);
             }

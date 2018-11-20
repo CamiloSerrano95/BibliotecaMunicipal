@@ -96,7 +96,6 @@ C:\Users\Stiven\Desktop\ProyectoCole2.0\BibliotecaMunicipal\BibliotecaMunicipal\
 C:\Users\Stiven\Desktop\ProyectoCole2.0\BibliotecaMunicipal\BibliotecaMunicipal\bin\Microsoft.AI.WindowsServer.xml
 C:\Users\Stiven\Desktop\ProyectoCole2.0\BibliotecaMunicipal\BibliotecaMunicipal\bin\Microsoft.ApplicationInsights.xml
 C:\Users\Stiven\Desktop\ProyectoCole2.0\BibliotecaMunicipal\BibliotecaMunicipal\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-C:\Users\Stiven\Desktop\ProyectoCole2.0\BibliotecaMunicipal\BibliotecaMunicipal\obj\Debug\BibliotecaMunicipal.csprojAssemblyReference.cache
 C:\Users\Stiven\Desktop\ProyectoCole2.0\BibliotecaMunicipal\BibliotecaMunicipal\obj\Debug\BibliotecaMunicipal.csproj.CoreCompileInputs.cache
 C:\Users\Stiven\Desktop\ProyectoCole2.0\BibliotecaMunicipal\BibliotecaMunicipal\obj\Debug\BibliotecaMunicipal.csproj.CopyComplete
 C:\Users\Stiven\Desktop\ProyectoCole2.0\BibliotecaMunicipal\BibliotecaMunicipal\obj\Debug\BibliotecaMunicipal.dll
