@@ -77,14 +77,14 @@ namespace BibliotecaMunicipal.Controladores
             return data;
         }
 
-        public void MostrarAreas()
+        public DataTable MostrarAreas()
         {
+            DataTable DT = new DataTable();
             try
             {
                 Con.Conectar();
                 string sql = "SELECT * FROM Areas";
                 SqlDataAdapter cmd = new SqlDataAdapter(sql, Con.Conex());
-                DataTable DT = new DataTable();
                 cmd.Fill(DT);
             }
             catch (Exception ex)
@@ -96,6 +96,8 @@ namespace BibliotecaMunicipal.Controladores
             {
                 Con.Desconectar();
             }
+
+            return DT;
         }
 
         public void ActualizarArea(Areas area)
