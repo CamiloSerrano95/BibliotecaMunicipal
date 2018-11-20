@@ -24,7 +24,7 @@ namespace BibliotecaMunicipal.Vistas
             
             Con.Conectar();
 
-            string sql = "SELECT * FROM Areas WHERE areCodigo LIKE '%'+@areaCodigo+'%'";
+            string sql = "SELECT * FROM Areas WHERE areCodigo = @areaCodigo";
             SqlCommand cmd = new SqlCommand(sql, Con.Conex());
             cmd.Parameters.AddWithValue("@areaCodigo", codigo);
             SqlDataAdapter sda = new SqlDataAdapter(cmd);
@@ -33,6 +33,8 @@ namespace BibliotecaMunicipal.Vistas
 
             TableConsultaArea.DataSource = DT;
             TableConsultaArea.DataBind();
+
+            codigo = "";
         }
 
         protected void LlenarAreas()
