@@ -53,7 +53,6 @@ namespace BibliotecaMunicipal.Modelos
             {
                 return usuTelefono;
             }
-
             set
             {
                 usuTelefono = value;
@@ -82,4 +81,5 @@ namespace BibliotecaMunicipal.Modelos
             }
         }
     }
+
 }
