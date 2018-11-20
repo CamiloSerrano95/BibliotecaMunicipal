@@ -13,7 +13,7 @@ namespace BibliotecaMunicipal.Vistas
 {
     public partial class VistaAreas : System.Web.UI.Page
     {
-        Conexion Con = new Conexion();
+        //Conexion Con = new Conexion();
         AreaControlador AC = new AreaControlador();
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -38,12 +38,7 @@ namespace BibliotecaMunicipal.Vistas
 
         protected void MostrarAreas()
         {
-            Con.Conectar();
-            string sql = "SELECT * FROM Areas";
-            SqlDataAdapter cmd = new SqlDataAdapter(sql, Con.Conex());
-            DataTable DT = new DataTable();
-            cmd.Fill(DT);
-            this.TableAllAreas.DataSource = DT;
+            TableAllAreas.DataSource = AC.MostrarAreas();
             TableAllAreas.DataBind();
         }
     }
