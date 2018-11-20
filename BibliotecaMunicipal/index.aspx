@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous"/>
     <link rel="stylesheet" href="estilos/estilos.css"/>
-    <title>Areas</title>
+    <title>Inicio</title>
 </head>
 <body>
     <div class="container">
@@ -38,7 +38,7 @@
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                   <a class="dropdown-item" href="Vistas/Areas/VistaAreas.aspx">Ingresar Nueva Area</a>
-                  <a class="dropdown-item" href="#">Consultar Area</a>
+                  <a class="dropdown-item" href="Vistas/Areas/Consultar.aspx">Consultar Area</a>
                   <a class="dropdown-item" href="Vistas/Areas/Modificar.aspx">Modificar Area</a>
                   <a class="dropdown-item" href="Vistas/Areas/Eliminar.aspx">Eliminar Area</a>
                 </div>
