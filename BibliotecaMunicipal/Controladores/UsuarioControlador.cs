@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Data.SqlClient;
 using System.Linq;
 using System.Web;
@@ -99,6 +100,59 @@ namespace BibliotecaMunicipal.Controladores
             {
                 Con.Desconectar();
             }
+        }
+        public string[] BuscarUsuario(string dato)
+        {
+            string[] datos = new string[5];
+            try
+            {
+                Con.Conectar();
+                string sql = "SELECT * FROM Usuarios WHERE usuDocumento = @doc";
+                SqlCommand sc = new SqlCommand(sql, Con.Conex());
+                sc.Parameters.AddWithValue("@doc", dato);
+                SqlDataReader dr = sc.ExecuteReader();
+                if (dr.Read())
+                {
+                    datos[0] = dr.GetString(1);
+                    datos[1] = dr.GetString(2);
+                    datos[2] = dr.GetString(3);
+                    datos[3] = dr.GetString(4);
+                    datos[4] = dr.GetString(5);
+                }
+                else
+                {
+                    Console.WriteLine("no se encuentra el usuario");
+                }
+            }
+            catch(Exception e)
+            {
+                Console.WriteLine(e.Message);
+            }
+            finally
+            {
+                Con.Desconectar();
+            }
+            return datos;
+        }
+        public DataTable ListaUsuarios()
+        {
+            DataTable DT = new DataTable();
+            try
+            {
+                Con.Conectar();
+                string sql = "SELECT * FROM Usuarios";
+                SqlDataAdapter cmd = new SqlDataAdapter(sql, Con.Conex());
+                cmd.Fill(DT);
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e.Message);
+            }
+            finally
+            {
+                Con.Desconectar();
+            }
+            return DT;
         }
     }
 }

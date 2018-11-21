@@ -131,6 +131,9 @@
     <Content Include="Vistas\Areas\Eliminar.aspx" />
     <Content Include="Vistas\Areas\Modificar.aspx" />
     <Content Include="Vistas\Areas\Consultar.aspx" />
+    <Content Include="Vistas\Usuarios\Eliminar.aspx" />
+    <Content Include="Vistas\Usuarios\Insertar.aspx" />
+    <Content Include="Vistas\Usuarios\Modificar.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -178,6 +181,27 @@
     </Compile>
     <Compile Include="Vistas\Areas\Consultar.aspx.designer.cs">
       <DependentUpon>Consultar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\Usuarios\Eliminar.aspx.cs">
+      <DependentUpon>Eliminar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Vistas\Usuarios\Eliminar.aspx.designer.cs">
+      <DependentUpon>Eliminar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\Usuarios\Insertar.aspx.cs">
+      <DependentUpon>Insertar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Vistas\Usuarios\Insertar.aspx.designer.cs">
+      <DependentUpon>Insertar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\Usuarios\Modificar.aspx.cs">
+      <DependentUpon>Modificar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Vistas\Usuarios\Modificar.aspx.designer.cs">
+      <DependentUpon>Modificar.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
