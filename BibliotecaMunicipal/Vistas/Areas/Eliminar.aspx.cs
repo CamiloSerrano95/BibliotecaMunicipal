@@ -8,6 +8,7 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using System.Windows.Forms;
 
 namespace BibliotecaMunicipal.Vistas
 {
@@ -16,22 +17,28 @@ namespace BibliotecaMunicipal.Vistas
         AreaControlador AC = new AreaControlador();
         protected void Page_Load(object sender, EventArgs e)
 		{
-            LlenarAreas();
+            if (!IsPostBack)
+            {
+                LlenarAreas();
+            }
 		}
 
         protected void EliminarArea_Click(object sender, EventArgs e)
         {
-            string Codigo = AreasSelect.SelectedItem.Value.ToString();
+            string Codigo = AreasSelect.SelectedValue;
 
             AC.EliminarArea(Codigo);
+
+            MessageBox.Show(Codigo);
         }
 
         protected void LlenarAreas()
         {
+            AreasSelect.DataSource = AC.MostrarAreas();
             AreasSelect.DataTextField = "areNombre";
             AreasSelect.DataValueField = "areCodigo";
-            AreasSelect.DataSource= AC.MostrarAreas();
             AreasSelect.DataBind();
+            AreasSelect.Items.Insert(0, new ListItem("Seleccione", "0"));
         }
     }
 }
