@@ -25,16 +25,6 @@ namespace BibliotecaMunicipal.Vistas
         protected void ConsultarArea_Click(object sender, EventArgs e)
         {
             string codigo = AreasSelect.SelectedItem.Value.ToString();
-            /*Conexion Con = new Conexion();
-            
-            Con.Conectar();
-
-            string sql = "SELECT * FROM Areas WHERE areCodigo = @areaCodigo";
-            SqlCommand cmd = new SqlCommand(sql, Con.Conex());
-            cmd.Parameters.AddWithValue("@areaCodigo", codigo);
-            SqlDataAdapter sda = new SqlDataAdapter(cmd);
-            DataTable DT = new DataTable();
-            sda.Fill(DT);*/
 
             TableConsultaArea.DataSource = AC.ConsultarArea(codigo);
             TableConsultaArea.DataBind();
