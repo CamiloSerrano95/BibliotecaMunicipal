@@ -27,7 +27,7 @@ namespace BibliotecaMunicipal.Vistas
         {
             string Codigo = AreasSelect.SelectedValue;
 
-            AC.EliminarArea(Codigo);
+            //AC.EliminarArea(Codigo);
 
             MessageBox.Show(Codigo);
         }
@@ -38,7 +38,7 @@ namespace BibliotecaMunicipal.Vistas
             AreasSelect.DataTextField = "areNombre";
             AreasSelect.DataValueField = "areCodigo";
             AreasSelect.DataBind();
-            AreasSelect.Items.Insert(0, new ListItem("Seleccione", "0"));
+            //AreasSelect.Items.Insert(0, new ListItem("Seleccione", "0"));
         }
     }
 }
