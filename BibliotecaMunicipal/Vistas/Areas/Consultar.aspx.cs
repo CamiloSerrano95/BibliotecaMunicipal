@@ -1,4 +1,5 @@
-﻿using BibliotecaMunicipal.Modelos;
+﻿using BibliotecaMunicipal.Controladores;
+using BibliotecaMunicipal.Modelos;
 using System;
 using System.Collections.Generic;
 using System.Data;
@@ -12,15 +13,19 @@ namespace BibliotecaMunicipal.Vistas
 {
     public partial class Consultar : System.Web.UI.Page
     {
-        Conexion Con = new Conexion();
+        AreaControlador AC = new AreaControlador();
         protected void Page_Load(object sender, EventArgs e)
         {
-            LlenarAreas();
+            if (!IsPostBack)
+            {
+                LlenarAreas();
+            }
         }
 
         protected void ConsultarArea_Click(object sender, EventArgs e)
         {
             string codigo = AreasSelect.SelectedItem.Value.ToString();
+            Conexion Con = new Conexion();
             
             Con.Conectar();
 
@@ -33,22 +38,15 @@ namespace BibliotecaMunicipal.Vistas
 
             TableConsultaArea.DataSource = DT;
             TableConsultaArea.DataBind();
-
-            codigo = "";
         }
 
         protected void LlenarAreas()
         {
-            Con.Conectar();
-            string sql = "SELECT * FROM Areas";
-            SqlDataAdapter cmd = new SqlDataAdapter(sql, Con.Conex());
-            DataTable DT = new DataTable();
-            cmd.Fill(DT);
-
+            AreasSelect.DataSource = AC.MostrarAreas();
             AreasSelect.DataTextField = "areNombre";
             AreasSelect.DataValueField = "areCodigo";
-            AreasSelect.DataSource = DT;
             AreasSelect.DataBind();
+            AreasSelect.Items.Insert(0, new ListItem("Seleccione", "0"));
         }
     }
 }
