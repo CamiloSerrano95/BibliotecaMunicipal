@@ -16,7 +16,10 @@ namespace BibliotecaMunicipal.Vistas
         AreaControlador AC = new AreaControlador();
         protected void Page_Load(object sender, EventArgs e)
         {
-            LlenarAreas();
+            if (!IsPostBack)
+            {
+                LlenarAreas();
+            }
         }
 
         protected void LlenarAreas()
