@@ -30,8 +30,10 @@
             <asp:Label ID="Label4" runat="server" Text="Tiempo Area   "></asp:Label>
             <asp:TextBox ID="EditarTiempo" runat="server" class="form-control"></asp:TextBox>
         </div>
-        <asp:Button ID="ActualizarCambios" runat="server" Text="Guardar Cambios" OnClick="ActualizarCambios_Click" class="btn btn-success mt-3"/>
-        <a href="../../default.aspx" class="btn btn-success">Volver al Inicio</a>
+        <div class="form-group">
+            <asp:Button ID="ActualizarCambios" runat="server" Text="Guardar Cambios" OnClick="ActualizarCambios_Click" class="btn btn-success "/>
+            <a href="../../default.aspx" class="btn btn-success">Volver al Inicio</a>
+        </div>        
     </div>
     </form>
 
