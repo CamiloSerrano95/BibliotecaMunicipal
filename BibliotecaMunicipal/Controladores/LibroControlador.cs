@@ -174,5 +174,30 @@ namespace BibliotecaMunicipal.Controladores
                 Con.Desconectar();
             }
         }
+
+        public DataTable ConsultarLibro(string Codigo)
+        {
+            DataTable DT = new DataTable();
+            try
+            {
+                Con.Conectar();
+                string sql = "SELECT * FROM Libros WHERE libCodigo = @libCodigo";
+                SqlCommand cmd = new SqlCommand(sql, Con.Conex());
+                cmd.Parameters.AddWithValue("@libCodigo", Codigo);
+                SqlDataAdapter sda = new SqlDataAdapter(cmd);
+                sda.Fill(DT);
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
+
+            finally
+            {
+                Con.Desconectar();
+            }
+
+            return DT;
+        }
     }
 }
