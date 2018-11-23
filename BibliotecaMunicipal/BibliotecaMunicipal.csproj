@@ -133,6 +133,7 @@
     <Content Include="Vistas\Areas\Modificar.aspx" />
     <Content Include="Vistas\Areas\Consultar.aspx" />
     <Content Include="Vistas\Libros\Insertar.aspx" />
+    <Content Include="Vistas\Libros\Modificar.aspx" />
     <Content Include="Vistas\Usuarios\Eliminar.aspx" />
     <Content Include="Vistas\Usuarios\Insertar.aspx" />
     <Content Include="Vistas\Usuarios\Modificar.aspx" />
@@ -190,6 +191,13 @@
     </Compile>
     <Compile Include="Vistas\Libros\Insertar.aspx.designer.cs">
       <DependentUpon>Insertar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\Libros\Modificar.aspx.cs">
+      <DependentUpon>Modificar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Vistas\Libros\Modificar.aspx.designer.cs">
+      <DependentUpon>Modificar.aspx</DependentUpon>
     </Compile>
     <Compile Include="Vistas\Usuarios\Eliminar.aspx.cs">
       <DependentUpon>Eliminar.aspx</DependentUpon>
