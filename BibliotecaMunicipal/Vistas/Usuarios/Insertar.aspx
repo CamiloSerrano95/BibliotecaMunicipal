@@ -30,6 +30,10 @@
             <br />
             <br />
             <asp:Button ID="BtnIngresar" runat="server" OnClick="BtnIngresar_Click" Text="Ingresar" />
+            <br />
+            <br />
+            <asp:GridView ID="TablaUsuarios" runat="server">
+            </asp:GridView>
         </div>
     </form>
 </body>

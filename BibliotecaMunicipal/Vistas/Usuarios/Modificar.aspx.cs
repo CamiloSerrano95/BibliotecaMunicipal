@@ -12,14 +12,18 @@ namespace BibliotecaMunicipal.Vistas.Usuarios
         Controladores.UsuarioControlador Cu = new Controladores.UsuarioControlador();
         protected void Page_Load(object sender, EventArgs e)
         {
-            listar();
+            if (!IsPostBack)
+            {
+                listar();
+            }
+            
         }
         public void listar()
         {
             Controladores.UsuarioControlador us = new Controladores.UsuarioControlador();
             ListaUsuarios.DataTextField = "usuNombre";
             ListaUsuarios.DataValueField = "usuDocumento";
-            ListaUsuarios.DataSource = us.ListaUsuarios();
+            ListaUsuarios.DataSource = us.ListaUsuarios("");
             ListaUsuarios.DataBind();
         }
         protected void BtnBuscar_Click(object sender, EventArgs e)
