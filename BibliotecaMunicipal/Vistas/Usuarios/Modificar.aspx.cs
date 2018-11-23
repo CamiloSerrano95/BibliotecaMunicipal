@@ -20,10 +20,9 @@ namespace BibliotecaMunicipal.Vistas.Usuarios
         }
         public void listar()
         {
-            Controladores.UsuarioControlador us = new Controladores.UsuarioControlador();
             ListaUsuarios.DataTextField = "usuNombre";
             ListaUsuarios.DataValueField = "usuDocumento";
-            ListaUsuarios.DataSource = us.ListaUsuarios("");
+            ListaUsuarios.DataSource = Cu.ListaUsuarios("");
             ListaUsuarios.DataBind();
         }
         protected void BtnBuscar_Click(object sender, EventArgs e)
