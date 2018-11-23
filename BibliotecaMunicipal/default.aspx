@@ -48,10 +48,10 @@
                   Libros
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <a class="dropdown-item" href="#">Ingresar Nuevos Libros</a>
-                  <a class="dropdown-item" href="#">Consultar Libros</a>
-                  <a class="dropdown-item" href="#">Modificar Libros</a>
-                  <a class="dropdown-item" href="#">Eliminar Libros</a>
+                  <a class="dropdown-item" href="Vistas/Libros/Insertar.aspx">Ingresar Nuevos Libros</a>
+                  <a class="dropdown-item" href="Vistas/Libros/Consultar.aspx">Consultar Libros</a>
+                  <a class="dropdown-item" href="Vistas/Libros/Modificar.aspx">Modificar Libros</a>
+                  <a class="dropdown-item" href="Vistas/Libros/Eliminar.aspx">Eliminar Libros</a>
                 </div>
               </li>
               <li class="nav-item dropdown">
