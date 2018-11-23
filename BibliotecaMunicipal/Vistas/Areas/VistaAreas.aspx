@@ -8,9 +8,9 @@
     <title></title>
 </head>
 <body>
+    <h1>Insertar un area</h1>
     <form id="form1" runat="server">
     <div>
-        <h1>Hola</h1>
         <asp:Label ID="Label1" runat="server" Text="Codigo Area"></asp:Label>
         <asp:TextBox ID="CodigoArea" runat="server"></asp:TextBox>
         <br />
