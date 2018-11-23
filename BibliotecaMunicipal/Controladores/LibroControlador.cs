@@ -1,6 +1,7 @@
 ﻿using BibliotecaMunicipal.Modelos;
 using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Data.SqlClient;
 using System.Linq;
 using System.Web;
@@ -83,6 +84,29 @@ namespace BibliotecaMunicipal.Controladores
                 Con.Desconectar();
             }
             return data;
+        }
+
+        public DataTable MostrarLibros()
+        {
+            DataTable DT = new DataTable();
+            try
+            {
+                Con.Conectar();
+                string sql = "SELECT * FROM Libros";
+                SqlDataAdapter cmd = new SqlDataAdapter(sql, Con.Conex());
+                cmd.Fill(DT);
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
+
+            finally
+            {
+                Con.Desconectar();
+            }
+
+            return DT;
         }
 
         public void ActualizarLibro(Libro libro)
