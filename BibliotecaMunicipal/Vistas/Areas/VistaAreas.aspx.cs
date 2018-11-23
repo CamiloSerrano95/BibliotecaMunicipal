@@ -26,7 +26,7 @@ namespace BibliotecaMunicipal.Vistas
             A.CodigoArea = CodigoArea.Text;
             A.NombreArea = NombreArea.Text;
             A.TiempoArea = TiempoArea.Text;
-
+            
             AC.InsertarArea(A);
 
             CodigoArea.Text = "";
