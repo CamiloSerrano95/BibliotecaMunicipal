@@ -81,7 +81,7 @@ namespace BibliotecaMunicipal.Controladores
             try
             {
                 Con.Conectar();
-                string sql = " Delete FROM Usuario WHERE usuDocumento = @doc ";
+                string sql = " Delete FROM Usuarios WHERE usuDocumento = @doc ";
                 SqlCommand sc = new SqlCommand(sql, Con.Conex());
                 sc.Parameters.AddWithValue("@doc", dato);
                 int result = sc.ExecuteNonQuery();
@@ -134,24 +134,49 @@ namespace BibliotecaMunicipal.Controladores
             }
             return datos;
         }
-        public DataTable ListaUsuarios()
+        public DataTable ListaUsuarios(string dato)
         {
             DataTable DT = new DataTable();
-            try
+            if (dato == "")
             {
-                Con.Conectar();
-                string sql = "SELECT * FROM Usuarios";
-                SqlDataAdapter cmd = new SqlDataAdapter(sql, Con.Conex());
-                cmd.Fill(DT);
+                try
+                {
+                    Con.Conectar();
+                    string sql = "SELECT * FROM Usuarios";
+                    SqlDataAdapter cmd = new SqlDataAdapter(sql, Con.Conex());
+                    cmd.Fill(DT);
+                }
+                catch (Exception e)
+                {
+                    Console.WriteLine(e.Message);
+                }
+                finally
+                {
+                    Con.Desconectar();
+                }
             }
-            catch (Exception e)
+            else
             {
-                Console.WriteLine(e.Message);
+                try
+                {
+                    Con.Conectar();
+                    string sql = "SELECT * FROM Usuarios WHERE usuDocumento = @doc";
+                    SqlCommand sc = new SqlCommand(sql, Con.Conex());
+                    sc.Parameters.AddWithValue("@doc", dato);
+                    SqlDataAdapter sda = new SqlDataAdapter();
+                    sda.SelectCommand = sc;
+                    sda.Fill(DT);
+                }
+                catch (Exception e)
+                {
+                    Console.WriteLine(e.Message);
+                }
+                finally
+                {
+                    Con.Desconectar();
+                }
             }
-            finally
-            {
-                Con.Desconectar();
-            }
+
             return DT;
         }
     }

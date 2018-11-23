@@ -9,9 +9,15 @@ namespace BibliotecaMunicipal.Vistas.Usuarios
 {
     public partial class Insertar : System.Web.UI.Page
     {
+        Controladores.UsuarioControlador Cu = new Controladores.UsuarioControlador();
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            Mostrartabla("");
+        }
+        public void Mostrartabla(string dato)
+        {
+            TablaUsuarios.DataSource = Cu.ListaUsuarios(dato);
+            TablaUsuarios.DataBind();
         }
 
         protected void BtnIngresar_Click(object sender, EventArgs e)
@@ -31,6 +37,8 @@ namespace BibliotecaMunicipal.Vistas.Usuarios
             Telefono.Text = "";
             Correo.Text = "";
             Estado.Text = "";
+            Mostrartabla("");
+            Documento.Focus();
         }
     }
 }

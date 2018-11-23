@@ -11,14 +11,16 @@ namespace BibliotecaMunicipal.Vistas.Usuarios
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            listar();
+            if (!IsPostBack) {
+                listar();
+            }
         }
         public void listar()
         {
             Controladores.UsuarioControlador us = new Controladores.UsuarioControlador();
             ListaUsuarios.DataTextField = "usuNombre";
             ListaUsuarios.DataValueField = "usuDocumento";
-            ListaUsuarios.DataSource = us.ListaUsuarios();
+            ListaUsuarios.DataSource = us.ListaUsuarios("");
             ListaUsuarios.DataBind();
         }
 
@@ -26,6 +28,7 @@ namespace BibliotecaMunicipal.Vistas.Usuarios
         {
             Controladores.UsuarioControlador Cu = new Controladores.UsuarioControlador();
             Cu.EliminarUsuario(ListaUsuarios.SelectedValue);
+            listar();
         }
     }
 }

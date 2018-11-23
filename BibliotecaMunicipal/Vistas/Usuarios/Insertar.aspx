@@ -32,11 +32,17 @@
                 <asp:TextBox ID="Correo" runat="server" class="form-control"></asp:TextBox>
             </div>
             <div class="form-group">
-                <asp:Label ID="Label6" runat="server" Text="Estao"></asp:Label>
-                <asp:TextBox ID="Estado" runat="server" class="form-control"></asp:TextBox>
+                <asp:Label ID="Label6" runat="server" Text="Estado"></asp:Label>
+                <br />
             </div>
+            <asp:TextBox ID="Estado" runat="server" class="form-control"></asp:TextBox>
+            <br />
             <asp:Button ID="BtnIngresar" runat="server" OnClick="BtnIngresar_Click" Text="Ingresar" class="btn btn-success" />
             <a href="../../default.aspx" class="btn btn-success">Volver al Inicio</a>
+            <br />
+            <br />
+                <asp:GridView ID="TablaUsuarios" runat="server">
+                </asp:GridView>
         </div>
     </form>
 
