@@ -37,6 +37,7 @@
                 <asp:TextBox ID="EstadoBusqueda" runat="server" class="form-control"></asp:TextBox>
             </div>            
             <asp:Button ID="BtnActualizar" runat="server" OnClick="BtnActualizar_Click" Text="Actualizar" class="btn btn-success" />
+            <a href="../../default.aspx" class="btn btn-success">Volver al Inicio</a>
         </div>
     </form>
 

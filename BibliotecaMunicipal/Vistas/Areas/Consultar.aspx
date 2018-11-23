@@ -17,6 +17,7 @@
         <asp:DropDownList ID="AreasSelect" runat="server" class="btn btn-success dropdown-toggle">
         </asp:DropDownList>
         <asp:Button ID="ConsultarArea" runat="server" OnClick="ConsultarArea_Click" Text="Consultar" class="btn btn-success"/>
+        <a href="../../default.aspx" class="btn btn-success">Volver al Inicio</a>
         <br />
         <br />
     </div>

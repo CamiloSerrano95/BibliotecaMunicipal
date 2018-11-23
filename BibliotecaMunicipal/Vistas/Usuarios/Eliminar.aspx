@@ -15,6 +15,7 @@
             </asp:DropDownList>
 &nbsp;
             <asp:Button ID="BtnEliminar" runat="server" OnClick="BtnEliminar_Click" Text="Eliminar" class="btn btn-success"/>
+            <a href="../../default.aspx" class="btn btn-success">Volver al Inicio</a>
         </div>
     </form>
 

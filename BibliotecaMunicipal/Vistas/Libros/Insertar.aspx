@@ -9,9 +9,10 @@
     <title></title>
 </head>
 <body>
-    <h1>Insertar un libro</h1>
+    
     <form id="form1" runat="server">
     <div class="container mt-4">
+        <h1>Insertar un libro</h1>
         <div class="form-group">
             <asp:Label ID="Label1" runat="server" Text="Codigo"></asp:Label>
             <asp:TextBox ID="CodigoLibro" runat="server" class="form-control"></asp:TextBox>
@@ -39,6 +40,7 @@
         </div>        
         <div class="form-group">
             <asp:Button ID="InsertarLibro" runat="server" Text="Insertar" OnClick="InsertarLibro_Click" class="btn btn-success" />
+            <a href="../../default.aspx" class="btn btn-success">Volver al Inicio</a>
         </div>
     </div>
         <asp:GridView ID="TablaLibros" runat="server" class="table">

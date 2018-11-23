@@ -9,9 +9,10 @@
     <title></title>
 </head>
 <body>
-    <h1>Insertar un area</h1>
+    
     <form id="form1" runat="server">
     <div class="container mt-4">
+        <h1>Insertar un area</h1>
         <div class="form-group">
             <asp:Label ID="Label1" runat="server" Text="Codigo Area"></asp:Label>
             <asp:TextBox ID="CodigoArea" runat="server" class="form-control"></asp:TextBox>
@@ -26,6 +27,7 @@
         </div>
         <div class="from-group">
             <asp:Button ID="InsertarArea" runat="server" OnClick="Button1_Click" Text="Insertar" class="btn btn-success"/>
+            <a href="../../default.aspx" class="btn btn-success">Volver al Inicio</a>
         </div>
         <div class="form-group">
              <asp:GridView ID="TableAllAreas" runat="server" class="table table-bordered">

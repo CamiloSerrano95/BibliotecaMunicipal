@@ -9,13 +9,15 @@
     <title></title>
 </head>
 <body>
-    <h1>Consultar un libro</h1>
+    
     <form id="form1" runat="server">
     <div class="container mt-4">
+        <h1>Consultar un libro</h1>
         <asp:Label ID="Label1" runat="server" Text="Selecione Libro"></asp:Label>
         <asp:DropDownList ID="LibrosSelect" runat="server" class="btn btn-success dropdown-toggle">
         </asp:DropDownList>
         <asp:Button ID="ConsultarLibro" runat="server" Text="Consultar" OnClick="ConsultarLibro_Click" class="btn btn-success"/>
+        <a href="../../default.aspx" class="btn btn-success">Volver al Inicio</a>
         <br />
         <br />
     </div>

@@ -36,6 +36,7 @@
                 <asp:TextBox ID="Estado" runat="server" class="form-control"></asp:TextBox>
             </div>
             <asp:Button ID="BtnIngresar" runat="server" OnClick="BtnIngresar_Click" Text="Ingresar" class="btn btn-success" />
+            <a href="../../default.aspx" class="btn btn-success">Volver al Inicio</a>
         </div>
     </form>
 

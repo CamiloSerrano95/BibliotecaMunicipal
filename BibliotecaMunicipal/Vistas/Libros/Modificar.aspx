@@ -9,9 +9,10 @@
     <title></title>
 </head>
 <body>
-    <h1>Modificar un libro</h1>
+    
     <form id="form1" runat="server">
     <div class="container mt-4">
+        <h1>Modificar un libro</h1>
         <div class="form-group">
             <asp:Label ID="Label1" runat="server" Text="Seleccione libro"></asp:Label>
             <asp:DropDownList ID="LibrosSelect" runat="server" class="btn btn-success dropdown-toggle">
@@ -48,6 +49,7 @@
         </div>
         <div class="form-group">
             <asp:Button ID="ActualizarLibro" runat="server" OnClick="ActualizarLibro_Click" Text="Guardar Cambios" class="btn btn-success" />
+            <a href="../../default.aspx" class="btn btn-success">Volver al Inicio</a>
         </div>
     </div>
     </form>
