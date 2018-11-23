@@ -19,12 +19,11 @@
             </asp:DropDownList>
             <br />
             <br />
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;
             <asp:Button ID="BtnGuardarPrestamo" runat="server" OnClick="Button1_Click" Text="Guardar prestamo" />
             <br />
             <br />
-            Libro&nbsp;&nbsp;&nbsp;
-            <asp:DropDownList ID="ListaLibros" runat="server">
+            Libro&nbsp;&nbsp;&nbsp; <asp:DropDownList ID="ListaLibros" runat="server">
             </asp:DropDownList>
             <br />
             <br />
@@ -34,7 +33,7 @@
             <asp:TextBox ID="FechaEntrega" runat="server"></asp:TextBox>
             <br />
             <br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;
             <asp:Button ID="BtnAgregaLibro" runat="server" Text="Agregar libro" />
             <br />
             <br />

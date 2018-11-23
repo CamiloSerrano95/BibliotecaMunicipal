@@ -31,6 +31,7 @@ namespace BibliotecaMunicipal.Vistas.Prestamos
             pr.PreFecha = Fecha.Text;
             pr.PreUsuario = ListaUsuarios.SelectedValue;
             Cp.InsertarPrestamo(pr);
+            //comment
         }
     }
 }
