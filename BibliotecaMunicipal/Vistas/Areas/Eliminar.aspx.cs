@@ -34,7 +34,7 @@ namespace BibliotecaMunicipal.Vistas
 
         protected void LlenarAreas()
         {
-            AreasSelect.DataSource = AC.MostrarAreas();
+            AreasSelect.DataSource = AC.MostrarAreas("");
             AreasSelect.DataTextField = "areNombre";
             AreasSelect.DataValueField = "areCodigo";
             AreasSelect.DataBind();
