@@ -25,18 +25,23 @@ namespace BibliotecaMunicipal.Vistas
         protected void ConsultarArea_Click(object sender, EventArgs e)
         {
             string codigo = AreasSelect.SelectedItem.Value.ToString();
+            Mostrar(codigo);
 
-            TableConsultaArea.DataSource = AC.ConsultarArea(codigo);
-            TableConsultaArea.DataBind();
         }
 
         protected void LlenarAreas()
         {
-            AreasSelect.DataSource = AC.MostrarAreas();
+            AreasSelect.DataSource = AC.MostrarAreas("");
             AreasSelect.DataTextField = "areNombre";
             AreasSelect.DataValueField = "areCodigo";
             AreasSelect.DataBind();
             AreasSelect.Items.Insert(0, new ListItem("Seleccione", "0"));
+        }
+
+        protected void Mostrar(string codigo)
+        {
+            TableConsultaArea.DataSource = AC.MostrarAreas(codigo);
+            TableConsultaArea.DataBind();
         }
     }
 }
