@@ -23,13 +23,13 @@ namespace BibliotecaMunicipal.Vistas.Libros
         {
             string codigo = LibrosSelect.SelectedItem.Value.ToString();
 
-            TablaConsultaLibro.DataSource = LC.ConsultarLibro(codigo);
+            TablaConsultaLibro.DataSource = LC.MostrarLibros(codigo);
             TablaConsultaLibro.DataBind();
         }
 
         protected void LlenarLibros()
         {
-            LibrosSelect.DataSource = LC.MostrarLibros();
+            LibrosSelect.DataSource = LC.MostrarLibros("");
             LibrosSelect.DataTextField = "libNombre";
             LibrosSelect.DataValueField = "libCodigo";
             LibrosSelect.DataBind();
