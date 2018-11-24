@@ -62,7 +62,7 @@ namespace BibliotecaMunicipal.Vistas.Libros
         {
             LibrosSelect.DataTextField = "libNombre";
             LibrosSelect.DataValueField = "libCodigo";
-            LibrosSelect.DataSource = LC.MostrarLibros();
+            LibrosSelect.DataSource = LC.MostrarLibros("");
             LibrosSelect.DataBind();
         }
 
@@ -70,7 +70,7 @@ namespace BibliotecaMunicipal.Vistas.Libros
         {
             AreasSelect.DataTextField = "areNombre";
             AreasSelect.DataValueField = "areCodigo";
-            AreasSelect.DataSource = AC.MostrarAreas();
+            AreasSelect.DataSource = AC.MostrarAreas("");
             AreasSelect.DataBind();
         }
     }
