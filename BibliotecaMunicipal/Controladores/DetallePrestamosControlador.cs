@@ -1,6 +1,7 @@
 ﻿using BibliotecaMunicipal.Modelos;
 using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Data.SqlClient;
 using System.Linq;
 using System.Web;
@@ -44,6 +45,61 @@ namespace BibliotecaMunicipal.Controladores
             {
                 Con.Desconectar();
             }
+        }
+
+        public string CodigoPrestamo()
+        {
+            string Codigo = "";
+            try
+            {
+                Con.Conectar();
+                string sql = "SELECT MAX(preCodigo) FROM Prestamos";
+                SqlCommand cmd = new SqlCommand(sql, Con.Conex());
+                SqlDataReader dr = cmd.ExecuteReader();
+
+                if (dr.Read())
+                {
+                    Codigo = dr.GetInt32(0).ToString();
+                }
+                else
+                {
+                    Console.WriteLine("No se encuentra el prestamo");
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
+
+            finally
+            {
+                Con.Desconectar();
+            }
+
+            return Codigo;
+        }
+
+        public DataTable MostrarPrestamos()
+        {
+            DataTable DT = new DataTable();
+            try
+            {
+                Con.Conectar();
+                string sql = "SELECT * FROM DetallesPrestamos";
+                SqlDataAdapter cmd = new SqlDataAdapter(sql, Con.Conex());
+                cmd.Fill(DT);
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
+
+            finally
+            {
+                Con.Desconectar();
+            }
+
+            return DT;
         }
     }
 }
