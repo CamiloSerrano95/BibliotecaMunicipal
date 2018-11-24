@@ -28,7 +28,7 @@ namespace BibliotecaMunicipal.Vistas.Libros
 
         protected void LlenarLibros()
         {
-            LibrosSelect.DataSource = LC.MostrarLibros();
+            LibrosSelect.DataSource = LC.MostrarLibros("");
             LibrosSelect.DataTextField = "libNombre";
             LibrosSelect.DataValueField = "libCodigo";
             LibrosSelect.DataBind();
