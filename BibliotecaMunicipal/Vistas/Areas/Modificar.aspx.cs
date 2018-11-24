@@ -26,7 +26,7 @@ namespace BibliotecaMunicipal.Vistas
         {
             AreasSelect.DataTextField = "areNombre";
             AreasSelect.DataValueField = "areCodigo";
-            AreasSelect.DataSource = AC.MostrarAreas();
+            AreasSelect.DataSource = AC.MostrarAreas("");
             AreasSelect.DataBind();
         }
 
