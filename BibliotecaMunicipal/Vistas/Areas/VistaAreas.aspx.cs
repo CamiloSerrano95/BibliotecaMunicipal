@@ -13,11 +13,10 @@ namespace BibliotecaMunicipal.Vistas
 {
     public partial class VistaAreas : System.Web.UI.Page
     {
-        //Conexion Con = new Conexion();
         AreaControlador AC = new AreaControlador();
         protected void Page_Load(object sender, EventArgs e)
         {
-            MostrarAreas();
+            MostrarAreas("");
         }
 
         protected void Button1_Click(object sender, EventArgs e)
@@ -33,12 +32,12 @@ namespace BibliotecaMunicipal.Vistas
             NombreArea.Text = "";
             TiempoArea.Text = "";
 
-            MostrarAreas();
+            MostrarAreas("");
         }
 
-        protected void MostrarAreas()
+        protected void MostrarAreas(string dato)
         {
-            TableAllAreas.DataSource = AC.MostrarAreas();
+            TableAllAreas.DataSource = AC.MostrarAreas(dato);
             TableAllAreas.DataBind();
         }
     }
