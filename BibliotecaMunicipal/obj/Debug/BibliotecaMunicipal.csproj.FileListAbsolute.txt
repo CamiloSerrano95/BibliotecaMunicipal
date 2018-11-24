@@ -160,3 +160,46 @@ C:\Users\Camilo Serrano\Desktop\BibliotecaMunicipal\BibliotecaMunicipal\bin\Syst
 C:\Users\Camilo Serrano\Desktop\BibliotecaMunicipal\BibliotecaMunicipal\obj\Debug\BibliotecaMunicipal.csprojResolveAssemblyReference.cache
 C:\Users\Camilo Serrano\Desktop\BibliotecaMunicipal\BibliotecaMunicipal\obj\Debug\BibliotecaMunicipal.dll
 C:\Users\Camilo Serrano\Desktop\BibliotecaMunicipal\BibliotecaMunicipal\obj\Debug\BibliotecaMunicipal.pdb
+C:\xampp\htdocs\PHP German Alexis\MVC\BibliotecaMunicipal\BibliotecaMunicipal\bin\ApplicationInsights.config
+C:\xampp\htdocs\PHP German Alexis\MVC\BibliotecaMunicipal\BibliotecaMunicipal\bin\roslyn\csc.exe
+C:\xampp\htdocs\PHP German Alexis\MVC\BibliotecaMunicipal\BibliotecaMunicipal\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\xampp\htdocs\PHP German Alexis\MVC\BibliotecaMunicipal\BibliotecaMunicipal\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\xampp\htdocs\PHP German Alexis\MVC\BibliotecaMunicipal\BibliotecaMunicipal\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\xampp\htdocs\PHP German Alexis\MVC\BibliotecaMunicipal\BibliotecaMunicipal\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\xampp\htdocs\PHP German Alexis\MVC\BibliotecaMunicipal\BibliotecaMunicipal\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\xampp\htdocs\PHP German Alexis\MVC\BibliotecaMunicipal\BibliotecaMunicipal\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\xampp\htdocs\PHP German Alexis\MVC\BibliotecaMunicipal\BibliotecaMunicipal\bin\roslyn\System.Collections.Immutable.dll
+C:\xampp\htdocs\PHP German Alexis\MVC\BibliotecaMunicipal\BibliotecaMunicipal\bin\roslyn\System.Reflection.Metadata.dll
+C:\xampp\htdocs\PHP German Alexis\MVC\BibliotecaMunicipal\BibliotecaMunicipal\bin\roslyn\vbc.exe
+C:\xampp\htdocs\PHP German Alexis\MVC\BibliotecaMunicipal\BibliotecaMunicipal\bin\roslyn\VBCSCompiler.exe
+C:\xampp\htdocs\PHP German Alexis\MVC\BibliotecaMunicipal\BibliotecaMunicipal\bin\roslyn\VBCSCompiler.exe.config
+C:\xampp\htdocs\PHP German Alexis\MVC\BibliotecaMunicipal\BibliotecaMunicipal\bin\BibliotecaMunicipal.dll.config
+C:\xampp\htdocs\PHP German Alexis\MVC\BibliotecaMunicipal\BibliotecaMunicipal\bin\BibliotecaMunicipal.dll
+C:\xampp\htdocs\PHP German Alexis\MVC\BibliotecaMunicipal\BibliotecaMunicipal\bin\BibliotecaMunicipal.pdb
+C:\xampp\htdocs\PHP German Alexis\MVC\BibliotecaMunicipal\BibliotecaMunicipal\bin\Microsoft.AI.Agent.Intercept.dll
+C:\xampp\htdocs\PHP German Alexis\MVC\BibliotecaMunicipal\BibliotecaMunicipal\bin\Microsoft.AI.DependencyCollector.dll
+C:\xampp\htdocs\PHP German Alexis\MVC\BibliotecaMunicipal\BibliotecaMunicipal\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\xampp\htdocs\PHP German Alexis\MVC\BibliotecaMunicipal\BibliotecaMunicipal\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\xampp\htdocs\PHP German Alexis\MVC\BibliotecaMunicipal\BibliotecaMunicipal\bin\Microsoft.AI.Web.dll
+C:\xampp\htdocs\PHP German Alexis\MVC\BibliotecaMunicipal\BibliotecaMunicipal\bin\Microsoft.AI.WindowsServer.dll
+C:\xampp\htdocs\PHP German Alexis\MVC\BibliotecaMunicipal\BibliotecaMunicipal\bin\Microsoft.ApplicationInsights.dll
+C:\xampp\htdocs\PHP German Alexis\MVC\BibliotecaMunicipal\BibliotecaMunicipal\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\xampp\htdocs\PHP German Alexis\MVC\BibliotecaMunicipal\BibliotecaMunicipal\bin\Newtonsoft.Json.dll
+C:\xampp\htdocs\PHP German Alexis\MVC\BibliotecaMunicipal\BibliotecaMunicipal\bin\System.Net.Http.Formatting.dll
+C:\xampp\htdocs\PHP German Alexis\MVC\BibliotecaMunicipal\BibliotecaMunicipal\bin\System.Web.Http.dll
+C:\xampp\htdocs\PHP German Alexis\MVC\BibliotecaMunicipal\BibliotecaMunicipal\bin\System.Web.Http.WebHost.dll
+C:\xampp\htdocs\PHP German Alexis\MVC\BibliotecaMunicipal\BibliotecaMunicipal\bin\Microsoft.AI.DependencyCollector.xml
+C:\xampp\htdocs\PHP German Alexis\MVC\BibliotecaMunicipal\BibliotecaMunicipal\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\xampp\htdocs\PHP German Alexis\MVC\BibliotecaMunicipal\BibliotecaMunicipal\bin\Microsoft.AI.Web.xml
+C:\xampp\htdocs\PHP German Alexis\MVC\BibliotecaMunicipal\BibliotecaMunicipal\bin\Microsoft.AI.WindowsServer.xml
+C:\xampp\htdocs\PHP German Alexis\MVC\BibliotecaMunicipal\BibliotecaMunicipal\bin\Microsoft.ApplicationInsights.xml
+C:\xampp\htdocs\PHP German Alexis\MVC\BibliotecaMunicipal\BibliotecaMunicipal\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\xampp\htdocs\PHP German Alexis\MVC\BibliotecaMunicipal\BibliotecaMunicipal\bin\Newtonsoft.Json.xml
+C:\xampp\htdocs\PHP German Alexis\MVC\BibliotecaMunicipal\BibliotecaMunicipal\bin\System.Net.Http.Formatting.xml
+C:\xampp\htdocs\PHP German Alexis\MVC\BibliotecaMunicipal\BibliotecaMunicipal\bin\System.Web.Http.xml
+C:\xampp\htdocs\PHP German Alexis\MVC\BibliotecaMunicipal\BibliotecaMunicipal\bin\System.Web.Http.WebHost.xml
+C:\xampp\htdocs\PHP German Alexis\MVC\BibliotecaMunicipal\BibliotecaMunicipal\obj\Debug\BibliotecaMunicipal.csprojAssemblyReference.cache
+C:\xampp\htdocs\PHP German Alexis\MVC\BibliotecaMunicipal\BibliotecaMunicipal\obj\Debug\BibliotecaMunicipal.csproj.CoreCompileInputs.cache
+C:\xampp\htdocs\PHP German Alexis\MVC\BibliotecaMunicipal\BibliotecaMunicipal\obj\Debug\BibliotecaMunicipal.csproj.CopyComplete
+C:\xampp\htdocs\PHP German Alexis\MVC\BibliotecaMunicipal\BibliotecaMunicipal\obj\Debug\BibliotecaMunicipal.dll
+C:\xampp\htdocs\PHP German Alexis\MVC\BibliotecaMunicipal\BibliotecaMunicipal\obj\Debug\BibliotecaMunicipal.pdb
