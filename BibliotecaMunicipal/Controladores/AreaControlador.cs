@@ -77,25 +77,50 @@ namespace BibliotecaMunicipal.Controladores
             return data;
         }
 
-        public DataTable MostrarAreas()
+        public DataTable MostrarAreas(string Codigo)
         {
             DataTable DT = new DataTable();
-            try
+            if(Codigo == "")
             {
-                Con.Conectar();
-                string sql = "SELECT * FROM Areas";
-                SqlDataAdapter cmd = new SqlDataAdapter(sql, Con.Conex());
-                cmd.Fill(DT);
-            }
-            catch (Exception ex)
-            {
-                Console.WriteLine(ex.Message);
-            }
+                try
+                {
+                    Con.Conectar();
+                    string sql = "SELECT * FROM Areas";
+                    SqlDataAdapter cmd = new SqlDataAdapter(sql, Con.Conex());
+                    cmd.Fill(DT);
+                }
+                catch (Exception ex)
+                {
+                    Console.WriteLine(ex.Message);
+                }
 
-            finally
-            {
-                Con.Desconectar();
+                finally
+                {
+                    Con.Desconectar();
+                }
             }
+            else
+            {
+                try
+                {
+                    Con.Conectar();
+                    string sql = "SELECT * FROM Areas WHERE areCodigo = @areaCodigo";
+                    SqlCommand cmd = new SqlCommand(sql, Con.Conex());
+                    cmd.Parameters.AddWithValue("@areaCodigo", Codigo);
+                    SqlDataAdapter sda = new SqlDataAdapter(cmd);
+                    sda.Fill(DT);
+                }
+                catch (Exception ex)
+                {
+                    Console.WriteLine(ex.Message);
+                }
+
+                finally
+                {
+                    Con.Desconectar();
+                }
+            }
+          
 
             return DT;
         }
@@ -159,30 +184,6 @@ namespace BibliotecaMunicipal.Controladores
             {
                 Con.Desconectar();
             }
-        }
-
-        public DataTable ConsultarArea(string Codigo)
-        {
-            DataTable DT = new DataTable();
-            try
-            {
-                Con.Conectar();
-                string sql = "SELECT * FROM Areas WHERE areCodigo = @areaCodigo";
-                SqlCommand cmd = new SqlCommand(sql, Con.Conex());
-                cmd.Parameters.AddWithValue("@areaCodigo", Codigo);
-                SqlDataAdapter sda = new SqlDataAdapter(cmd);
-                sda.Fill(DT);
-            } catch (Exception ex)
-            {
-                Console.WriteLine(ex.Message);
-            }
-            
-            finally
-            {
-                Con.Desconectar();
-            }
-
-            return DT;
         }
     }
 }
