@@ -31,8 +31,13 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Fecha entrega&nbsp;
             <asp:TextBox ID="FechaEntrega" runat="server"></asp:TextBox>
             <br />
+            <asp:TextBox ID="IdPrestamo" runat="server" Visible="False"></asp:TextBox>
             <br />
-            <asp:Button ID="Button1" runat="server" Text="Guardar libro" />
+            <asp:Button ID="GuardarDetalles" runat="server" OnClick="GuardarDetalles_Click" Text="Agregar" />
+            <br />
+            <br />
+            <asp:GridView ID="TablaDetallesPrestamo" runat="server">
+            </asp:GridView>
         </div>
     </form>
 </body>
