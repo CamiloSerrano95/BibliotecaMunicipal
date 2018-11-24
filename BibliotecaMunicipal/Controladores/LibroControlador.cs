@@ -86,24 +86,48 @@ namespace BibliotecaMunicipal.Controladores
             return data;
         }
 
-        public DataTable MostrarLibros()
+        public DataTable MostrarLibros(string Codigo)
         {
             DataTable DT = new DataTable();
-            try
+            
+            if (Codigo == "") 
             {
-                Con.Conectar();
-                string sql = "SELECT * FROM Libros";
-                SqlDataAdapter cmd = new SqlDataAdapter(sql, Con.Conex());
-                cmd.Fill(DT);
-            }
-            catch (Exception ex)
-            {
-                Console.WriteLine(ex.Message);
-            }
+                try
+                {
+                    Con.Conectar();
+                    string sql = "SELECT * FROM Libros";
+                    SqlDataAdapter cmd = new SqlDataAdapter(sql, Con.Conex());
+                    cmd.Fill(DT);
+                }
+                catch (Exception ex)
+                {
+                    Console.WriteLine(ex.Message);
+                }
 
-            finally
+                finally
+                {
+                    Con.Desconectar();
+                }
+            } else
             {
-                Con.Desconectar();
+                try
+                {
+                    Con.Conectar();
+                    string sql = "SELECT * FROM Libros WHERE libCodigo = @libCodigo";
+                    SqlCommand cmd = new SqlCommand(sql, Con.Conex());
+                    cmd.Parameters.AddWithValue("@libCodigo", Codigo);
+                    SqlDataAdapter sda = new SqlDataAdapter(cmd);
+                    sda.Fill(DT);
+                }
+                catch (Exception ex)
+                {
+                    Console.WriteLine(ex.Message);
+                }
+
+                finally
+                {
+                    Con.Desconectar();
+                }
             }
 
             return DT;
@@ -173,31 +197,6 @@ namespace BibliotecaMunicipal.Controladores
             {
                 Con.Desconectar();
             }
-        }
-
-        public DataTable ConsultarLibro(string Codigo)
-        {
-            DataTable DT = new DataTable();
-            try
-            {
-                Con.Conectar();
-                string sql = "SELECT * FROM Libros WHERE libCodigo = @libCodigo";
-                SqlCommand cmd = new SqlCommand(sql, Con.Conex());
-                cmd.Parameters.AddWithValue("@libCodigo", Codigo);
-                SqlDataAdapter sda = new SqlDataAdapter(cmd);
-                sda.Fill(DT);
-            }
-            catch (Exception ex)
-            {
-                Console.WriteLine(ex.Message);
-            }
-
-            finally
-            {
-                Con.Desconectar();
-            }
-
-            return DT;
         }
     }
 }
