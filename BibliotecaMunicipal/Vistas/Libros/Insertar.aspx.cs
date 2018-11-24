@@ -46,13 +46,13 @@ namespace BibliotecaMunicipal.Vistas.Libros
 
         protected void MostrarLibros()
         {
-            TablaLibros.DataSource = LC.MostrarLibros();
+            TablaLibros.DataSource = LC.MostrarLibros("");
             TablaLibros.DataBind();
         }
 
         protected void LlenarAreas()
         {
-            AreasSelect.DataSource = AC.MostrarAreas();
+            AreasSelect.DataSource = AC.MostrarAreas("");
             AreasSelect.DataTextField = "areNombre";
             AreasSelect.DataValueField = "areCodigo";
             AreasSelect.DataBind();
