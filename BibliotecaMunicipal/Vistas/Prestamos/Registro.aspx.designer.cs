@@ -76,12 +76,30 @@ namespace BibliotecaMunicipal.Vistas.Prestamos {
         protected global::System.Web.UI.WebControls.TextBox FechaEntrega;
         
         /// <summary>
-        /// Control Button1.
+        /// Control IdPrestamo.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button Button1;
+        protected global::System.Web.UI.WebControls.TextBox IdPrestamo;
+        
+        /// <summary>
+        /// Control GuardarDetalles.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button GuardarDetalles;
+        
+        /// <summary>
+        /// Control TablaDetallesPrestamo.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.GridView TablaDetallesPrestamo;
     }
 }
