@@ -76,6 +76,35 @@ namespace BibliotecaMunicipal.Controladores
                 Con.Desconectar();
             }
         }
+        public void ActualizarEstadoUsuario(string codigo )
+        {
+            try
+            {
+                Con.Conectar();
+                string sql = "UPDATE Usuarios SET UsuEstado = @est WHERE usuDocumento = @doc";
+                SqlCommand sc = new SqlCommand(sql, Con.Conex());
+                sc.Parameters.AddWithValue("@doc", codigo);
+                sc.Parameters.AddWithValue("@est", "Sancionado");
+                int result = sc.ExecuteNonQuery();
+                if (result == 1)
+                {
+                    Console.WriteLine("Usuario sancionado");
+                }
+                else
+                {
+                    Console.WriteLine("El usuario no pudo ser sancionado");
+                }
+
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e.Message);
+            }
+            finally
+            {
+                Con.Desconectar();
+            }
+        }
         public void EliminarUsuario(string dato)
         {
             try
@@ -124,6 +153,7 @@ namespace BibliotecaMunicipal.Controladores
                     Console.WriteLine("no se encuentra el usuario");
                 }
             }
+            
             catch(Exception e)
             {
                 Console.WriteLine(e.Message);

@@ -136,6 +136,7 @@
     <Content Include="Vistas\Libros\Eliminar.aspx" />
     <Content Include="Vistas\Libros\Insertar.aspx" />
     <Content Include="Vistas\Libros\Modificar.aspx" />
+    <Content Include="Vistas\Prestamos\Devoluciones.aspx" />
     <Content Include="Vistas\Prestamos\Registro.aspx" />
     <Content Include="Vistas\Usuarios\Consultar.aspx" />
     <Content Include="Vistas\Usuarios\Eliminar.aspx" />
@@ -148,6 +149,7 @@
     <Compile Include="Controladores\DetallePrestamosControlador.cs" />
     <Compile Include="Controladores\LibroControlador.cs" />
     <Compile Include="Controladores\PrestamosControlador.cs" />
+    <Compile Include="Controladores\SancionesControlador.cs" />
     <Compile Include="Controladores\UsuarioControlador.cs" />
     <Compile Include="default.aspx.cs">
       <DependentUpon>default.aspx</DependentUpon>
@@ -161,6 +163,7 @@
     <Compile Include="Modelos\DetallePrestamos.cs" />
     <Compile Include="Modelos\Libro.cs" />
     <Compile Include="Modelos\Prestamo.cs" />
+    <Compile Include="Modelos\Sancion.cs" />
     <Compile Include="Modelos\Usuario.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Vistas\Areas\VistaAreas.aspx.cs">
@@ -218,6 +221,13 @@
     </Compile>
     <Compile Include="Vistas\Libros\Modificar.aspx.designer.cs">
       <DependentUpon>Modificar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\Prestamos\Devoluciones.aspx.cs">
+      <DependentUpon>Devoluciones.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Vistas\Prestamos\Devoluciones.aspx.designer.cs">
+      <DependentUpon>Devoluciones.aspx</DependentUpon>
     </Compile>
     <Compile Include="Vistas\Prestamos\Registro.aspx.cs">
       <DependentUpon>Registro.aspx</DependentUpon>

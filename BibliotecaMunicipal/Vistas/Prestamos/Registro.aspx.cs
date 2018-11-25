@@ -65,7 +65,7 @@ namespace BibliotecaMunicipal.Vistas.Prestamos
             DP.CantLibro = Cantidad.Text;
             DP.FechaFin = FechaEntrega.Text;
             DP.FechaVen = FechaEntrega.Text;
-
+            DPC.InsertarDetallePretamo(DP);
             MostrarDetalles();
         }
     }

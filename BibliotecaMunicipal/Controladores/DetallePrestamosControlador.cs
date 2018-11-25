@@ -79,6 +79,36 @@ namespace BibliotecaMunicipal.Controladores
             return Codigo;
         }
 
+        public void ActualizarDetalle(string fecha, string codigo)
+        {
+            try
+            {
+                Con.Conectar();
+                string sql = "UPDATE DetallePrestamos SET dtpfechadev = @fec WHERE dtpPrestamo = @preC";
+                SqlCommand sc = new SqlCommand(sql, Con.Conex());
+                sc.Parameters.AddWithValue("@preC", codigo);
+                sc.Parameters.AddWithValue("@fec", fecha);
+                int result = sc.ExecuteNonQuery();
+                if (result == 1)
+                {
+                    Console.WriteLine("Actualizado ");
+                }
+                else
+                {
+                    Console.WriteLine("No pudo ser actualizado");
+                }
+
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e.Message);
+            }
+            finally
+            {
+                Con.Desconectar();
+            }
+        }
+
         public DataTable MostrarPrestamos()
         {
             DataTable DT = new DataTable();
