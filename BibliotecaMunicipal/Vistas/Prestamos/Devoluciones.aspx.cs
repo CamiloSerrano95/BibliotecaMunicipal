@@ -42,7 +42,7 @@ namespace BibliotecaMunicipal.Vistas.Prestamos
             Controladores.DetallePrestamosControlador Cdc = new Controladores.DetallePrestamosControlador();
             string[] vect = new string[2];
             vect = Cs.ConsultaExistencia(ListaLibros.SelectedValue, ListaUsuarios.SelectedValue);
-            DateTime fecha = Convert.ToDateTime(Fecha.Text);
+            /*DateTime fecha = Convert.ToDateTime(Fecha.Text);
             DateTime fechaEn = Convert.ToDateTime(vect[0]);
             MessageBox.Show(fecha + "");
             MessageBox.Show(vect[0] + "esta es la anterior");
@@ -59,7 +59,10 @@ namespace BibliotecaMunicipal.Vistas.Prestamos
             else
             {
                 Cdc.ActualizarDetalle(Fecha.Text, vect[1]);
-            }
+            }*/
+
+            MessageBox.Show(vect[0] + " este es el codigo");
+            MessageBox.Show(vect[1] + " esta es la fecha");
         }
     }
 }
