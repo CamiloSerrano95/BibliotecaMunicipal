@@ -48,15 +48,15 @@ namespace BibliotecaMunicipal.Controladores
             try
             {
                 Con.Conectar();
-                string sql = "Select dtpFechaVen, preCodigo From DetallesPrestamos, Prestamos,Libros Where DetallesPrestamos.dtpPrestamo = Prestamos.preCodigo AND Libros.libCodigo = @lib AND Prestamos.preUsuario = @us";
+                string sql = "Select preCodigo, dtpFechaVen From DetallesPrestamos, Prestamos,Libros Where DetallesPrestamos.dtpPrestamo = Prestamos.preCodigo AND Libros.libCodigo = @lib AND Prestamos.preUsuario = @us";
                 SqlCommand sc = new SqlCommand(sql, Con.Conex());
                 sc.Parameters.AddWithValue("@lib", libro);
                 sc.Parameters.AddWithValue("@us", usuario);
                 SqlDataReader dr = sc.ExecuteReader();
                 if (dr.Read())
                 {
-                    value[0] = dr.GetString(1);
-                    value[1] = dr.GetInt32(2).ToString();
+                    value[0] = dr.GetInt32(0).ToString();
+                    value[1] = dr.GetDateTime(1).ToString();
                 }
                 else
                 {
