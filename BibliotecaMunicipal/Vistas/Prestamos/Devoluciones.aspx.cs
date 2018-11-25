@@ -42,27 +42,17 @@ namespace BibliotecaMunicipal.Vistas.Prestamos
             Controladores.DetallePrestamosControlador Cdc = new Controladores.DetallePrestamosControlador();
             string[] vect = new string[2];
             vect = Cs.ConsultaExistencia(ListaLibros.SelectedValue, ListaUsuarios.SelectedValue);
-            /*DateTime fecha = Convert.ToDateTime(Fecha.Text);
-            DateTime fechaEn = Convert.ToDateTime(vect[0]);
-            MessageBox.Show(fecha + "");
-            MessageBox.Show(vect[0] + "esta es la anterior");
+            DateTime fecha = Convert.ToDateTime(Fecha.Text);
+            DateTime fechaEn = Convert.ToDateTime(vect[1]);
             if (fecha > fechaEn)
             {
-                fecha.AddDays(5);
                 Cu.ActualizarEstadoUsuario(ListaUsuarios.SelectedValue);
-                Ms.SanDiaSancion = Fecha.Text;
-                Ms.SanFechaFin = fecha.ToString();
+                Ms.SanDiaSancion = "5";
+                Ms.SanFechaFin = fecha.AddDays(5).ToString();
                 Ms.SanFechaInicio = Fecha.Text;
-                Ms.SanPrestamo = vect[1];
+                Ms.SanPrestamo = vect[0];
                 Cs.InsertarSancion(Ms);
             }
-            else
-            {
-                Cdc.ActualizarDetalle(Fecha.Text, vect[1]);
-            }*/
-
-            MessageBox.Show(vect[0] + " este es el codigo");
-            MessageBox.Show(vect[1] + " esta es la fecha");
         }
     }
 }

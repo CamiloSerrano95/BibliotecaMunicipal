@@ -5,6 +5,7 @@ using System.Data;
 using System.Data.SqlClient;
 using System.Linq;
 using System.Web;
+using System.Windows.Forms;
 
 namespace BibliotecaMunicipal.Controladores
 {
@@ -92,10 +93,12 @@ namespace BibliotecaMunicipal.Controladores
                 if (result == 1)
                 {
                     Console.WriteLine("Actualizado ");
+                    MessageBox.Show("Actualizado");
                 }
                 else
                 {
                     Console.WriteLine("No pudo ser actualizado");
+                    MessageBox.Show("No actualizado");
                 }
 
             }

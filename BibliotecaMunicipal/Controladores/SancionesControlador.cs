@@ -22,7 +22,7 @@ namespace BibliotecaMunicipal.Controladores
                 sc.Parameters.AddWithValue("@sFeI", Ms.SanFechaInicio);
                 sc.Parameters.AddWithValue("@sFeF", Ms.SanFechaFin);
                 int result = sc.ExecuteNonQuery();
-                if(result == 1)
+                if (result == 1)
                 {
                     Console.WriteLine("Sancion insertada");
                     MessageBox.Show("Sancion insertada");
@@ -33,9 +33,10 @@ namespace BibliotecaMunicipal.Controladores
                     MessageBox.Show("La sancion no pudo ser insertada");
                 }
             }
-            catch(Exception e)
+            catch (Exception e)
             {
                 Console.WriteLine(e.Message);
+                MessageBox.Show(e.Message);
             }
             finally
             {
@@ -71,7 +72,6 @@ namespace BibliotecaMunicipal.Controladores
             {
                 Con.Desconectar();
             }
-            MessageBox.Show(value[0]);
             return value;
         }
 
