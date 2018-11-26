@@ -59,8 +59,8 @@
                   Prestamos
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <a class="dropdown-item" href="#">Action</a>
-                  <a class="dropdown-item" href="#">Another action</a>
+                  <a class="dropdown-item" href="Vistas/Prestamos/Devoluciones.aspx">Devoluciones</a>
+                  <a class="dropdown-item" href="Vistas/Prestamos/Registro.aspx">Prestamos</a>
               </li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -75,10 +75,10 @@
                   Usuarios
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <a class="dropdown-item" href="#">Ingresar Nuevos Usuarios</a>
-                  <a class="dropdown-item" href="#">Consultar Usuarios</a>
-                  <a class="dropdown-item" href="#">Modificar Usuarios</a>
-                  <a class="dropdown-item" href="#">Eliminar Usuarios</a>
+                  <a class="dropdown-item" href="Vistas/Usuarios/Insertar.aspx">Ingresar Nuevos Usuarios</a>
+                  <a class="dropdown-item" href="Vistas/Usuarios/Consultar.aspx">Consultar Usuarios</a>
+                  <a class="dropdown-item" href="Vistas/Usuarios/Modificar.aspx">Modificar Usuarios</a>
+                  <a class="dropdown-item" href="Vistas/Usuarios/Eliminar.aspx">Eliminar Usuarios</a>
                 </div>
               </li>
           </ul>
