@@ -22,6 +22,7 @@ namespace BibliotecaMunicipal.Vistas.Usuarios
             ListaUsuarios.DataValueField = "usuDocumento";
             ListaUsuarios.DataSource = us.ListaUsuarios("");
             ListaUsuarios.DataBind();
+            ListaUsuarios.Items.Insert(0, new ListItem("Seleccione", "0"));
         }
 
         protected void BtnEliminar_Click(object sender, EventArgs e)

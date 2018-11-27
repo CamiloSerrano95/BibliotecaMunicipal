@@ -28,6 +28,7 @@ namespace BibliotecaMunicipal.Vistas
             AreasSelect.DataValueField = "areCodigo";
             AreasSelect.DataSource = AC.MostrarAreas("");
             AreasSelect.DataBind();
+            AreasSelect.Items.Insert(0, new ListItem("Seleccione", "0"));
         }
 
         protected void BuscarArea_Click1(object sender, EventArgs e)

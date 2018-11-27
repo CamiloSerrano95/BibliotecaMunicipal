@@ -28,6 +28,7 @@ namespace BibliotecaMunicipal.Vistas.Prestamos
             ListaUsuarios.DataValueField = "usuDocumento";
             ListaUsuarios.DataSource = Cu.ListaUsuarios("");
             ListaUsuarios.DataBind();
+            ListaUsuarios.Items.Insert(0, new ListItem("Seleccione", "0"));
         }
         public void ListarLibros()
         {
@@ -35,6 +36,7 @@ namespace BibliotecaMunicipal.Vistas.Prestamos
             ListaLibros.DataTextField = "libNombre";
             ListaLibros.DataValueField = "libCodigo";
             ListaLibros.DataBind();
+            ListaLibros.Items.Insert(0, new ListItem("Seleccione", "0"));
         }
         protected void BtnGuardar_Click(object sender, EventArgs e)
         {

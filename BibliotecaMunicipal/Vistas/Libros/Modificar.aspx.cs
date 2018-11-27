@@ -64,6 +64,7 @@ namespace BibliotecaMunicipal.Vistas.Libros
             LibrosSelect.DataValueField = "libCodigo";
             LibrosSelect.DataSource = LC.MostrarLibros("");
             LibrosSelect.DataBind();
+            LibrosSelect.Items.Insert(0, new ListItem("Seleccione", "0"));
         }
 
         protected void LlenarAreas()
@@ -72,6 +73,7 @@ namespace BibliotecaMunicipal.Vistas.Libros
             AreasSelect.DataValueField = "areCodigo";
             AreasSelect.DataSource = AC.MostrarAreas("");
             AreasSelect.DataBind();
+            AreasSelect.Items.Insert(0, new ListItem("Seleccione", "0"));
         }
     }
 }

@@ -29,6 +29,7 @@ namespace BibliotecaMunicipal.Vistas.Prestamos
             ListaUsuarios.DataValueField = "usuDocumento";
             ListaUsuarios.DataSource = Cu.ListaUsuarios("");
             ListaUsuarios.DataBind();
+            ListaUsuarios.Items.Insert(0, new ListItem("Seleccione", "0"));
         }
         protected void BtnGuardarPrestamo_Click(object sender, EventArgs e)
         {
@@ -48,6 +49,7 @@ namespace BibliotecaMunicipal.Vistas.Prestamos
             ListaLibros.DataValueField = "libCodigo";
             ListaLibros.DataSource = LC.MostrarLibros("");
             ListaLibros.DataBind();
+            ListaLibros.Items.Insert(0, new ListItem("Seleccione", "0"));
         }
 
         protected void MostrarDetalles()
