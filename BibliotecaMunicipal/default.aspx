@@ -49,7 +49,7 @@
             </div>
         </div>
 
-       <nav class="navbar navbar-expand-lg navbar-light bg-dark mt+2 ">
+       <nav class="navbar navbar-expand-lg navbar-light bg-dark mt-3 ">
       
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mr-auto">
