@@ -6,9 +6,10 @@
 <head runat="server">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <title></title>
+    <title> Consultar Area</title>
 </head>
 <body>
+         <h3 class="text-center mt-5">Sistema de Gestion de Prestamos de Libros de la Biblioteca Municipal</h3>
     <form id="form1" runat="server">
     <div class="container mt-4">
         <h1>Consultar un area</h1>
@@ -20,9 +21,14 @@
         <a href="../../default.aspx" class="btn btn-success">Volver al Inicio</a>
         <br />
         <br />
-    </div>
-        <asp:GridView ID="TableConsultaArea" runat="server" class="table">
+         <asp:GridView ID="TableConsultaArea" runat="server" AutoGenerateColumns="false" cellpadding="3" class="table table-striped" Height="123px" Width="567px" >
+            <Columns>
+            <asp:BoundField HeaderText="Codigo" Datafield="areCodigo"/>
+            <asp:BoundField HeaderText="Nombre" Datafield="areNombre"/>
+            <asp:BoundField HeaderText="Tiempo" Datafield="areTiempo" />
+            </Columns>
         </asp:GridView>
+    </div>
     </form>
 
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

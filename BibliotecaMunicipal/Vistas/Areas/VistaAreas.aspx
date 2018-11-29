@@ -6,10 +6,10 @@
 <head runat="server">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <title></title>
+    <title>Insertar Area</title>
 </head>
 <body>
-    
+         <h3 class="text-center mt-5">Sistema de Gestion de Prestamos de Libros de la Biblioteca Municipal</h3>
     <form id="form1" runat="server">
     <div class="container mt-4">
         <h1>Insertar un area</h1>
@@ -28,11 +28,18 @@
         <div class="from-group">
             <asp:Button ID="InsertarArea" runat="server" OnClick="Button1_Click" Text="Insertar" class="btn btn-success"/>
             <a href="../../default.aspx" class="btn btn-success">Volver al Inicio</a>
-        </div>
         <div class="form-group">
-             <asp:GridView ID="TableAllAreas" runat="server" class="table table-bordered">
-            </asp:GridView>
+             <br />
+             s<br />
+                  <asp:GridView ID="TableAllAreas" runat="server" AutoGenerateColumns="false" cellpadding="3" class="table table-striped" Height="123px" Width="567px" >
+                      <Columns>
+                          <asp:BoundField HeaderText="Codigo" DataField="areCodigo" />
+                          <asp:BoundField HeaderText="Nombre" DataField="areNombre" />
+                          <asp:BoundField HeaderText="Tiempo" DataField="areTiempo" />
+                      </Columns>
+                   </asp:GridView>
         </div>
+      
     </div>
     </form>
 

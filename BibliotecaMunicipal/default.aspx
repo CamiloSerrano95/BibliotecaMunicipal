@@ -7,7 +7,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous"/>
-    <link rel="stylesheet" href="estilos/estilos.css"/>
+
     <title>Inicio</title>
 </head>
 <body>
@@ -16,23 +16,44 @@
             <div class="col-sm" >
                 <img src="imagenes/imagen1.jpg" alt="imagen1"/>
             </div>
-            <div class="col-sm">
-                <h1>Biblioteca Municipal</h1>
-            </div>
-            <div class="col-sm-3" >
-                <img src="imagenes/imagen2.jpeg" alt="imagen2"/>
+
+            <div class="col-sm" >
+                        <h3 class="text-center mt-5"> BIBLIOTECA MUNICIPAL</h3>
+                         <br />
+                         <br />
+                    <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                  <p class="text-justify mt-3"><strong>Mision:</strong> <br />
+                                      La Biblioteca publica municipal, esta comprometida con la implementacion de programas
+                                      tendientes a lograr que la comunidad en general, adquiera el habito de la lectura y que cada usuario lea como minimos
+                                      seis(6) libros por año.
+                                 </p>
+                            </div>
+                            <div class="carousel-item">
+                                 <p class="text-justify "> <strong>Objetivos:</strong> <br />
+                                  Proporcionar el habito de la lectura. Apoyar la consulta de informacion local
+                                  a los usuarios, manejar la Biblioteca, planear, dirigir y controlar todas las actividades tecnicas de la Biblioteca
+                                  municipal organizar programas de lectura, tertulias literarias y actividades culturales dentro y fuera de la 
+                                  Biblioteca.
+                                 </p>
+                            </div>
+                            <div class="carousel-item">
+                                 <p class="text-justify"><strong>Metas:</strong> <br />
+                                    Lograr el incremento y sostenimiento de los indices estadisticos, en lo 
+                                    relacionado con la consulta y la lectura en la Biblioteca publica municipal.
+                                 </p>
+                            </div>
+                        </div>
+</div>
             </div>
         </div>
 
-       <nav class="navbar navbar-expand-lg navbar-light bg-success mt-3">
-        <a class="navbar-brand text-white" href="#">INICIO</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
+       <nav class="navbar navbar-expand-lg navbar-light bg-dark mt+2 ">
       
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mr-auto">
-            <li class="nav-item dropdown">
+            <li class="nav-item dropup">
                 <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                   Areas
                 </a>
@@ -43,7 +64,7 @@
                   <a class="dropdown-item" href="Vistas/Areas/Eliminar.aspx">Eliminar Area</a>
                 </div>
               </li>
-              <li class="nav-item dropdown">
+              <li class="nav-item dropup">
                 <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                   Libros
                 </a>
@@ -54,7 +75,7 @@
                   <a class="dropdown-item" href="Vistas/Libros/Eliminar.aspx">Eliminar Libros</a>
                 </div>
               </li>
-              <li class="nav-item dropdown">
+              <li class="nav-item dropup">
                 <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                   Prestamos
                 </a>
@@ -62,7 +83,7 @@
                   <a class="dropdown-item" href="Vistas/Prestamos/Devoluciones.aspx">Devoluciones</a>
                   <a class="dropdown-item" href="Vistas/Prestamos/Registro.aspx">Prestamos</a>
               </li>
-            <li class="nav-item dropdown">
+            <li class="nav-item dropup">
               <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Sanciones
               </a>
@@ -70,7 +91,7 @@
                 <a class="dropdown-item" href="#">Action</a>
                 <a class="dropdown-item" href="#">Another action</a>
             </li>
-            <li class="nav-item dropdown">
+            <li class="nav-item dropup">
                 <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                   Usuarios
                 </a>
@@ -86,19 +107,6 @@
       </nav> 
 
       <h3 class="text-center mt-5">Sistema de Gestion de Prestamos de Libros de la Biblioteca Municipal</h3>
-
-      <p class="text-justify mt-3"><strong>Mision:</strong> La Biblioteca publica municipal, esta comprometida con la implementacion de programas
-          tendientes a lograr que la comunidad en general, adquiera el habito de la lectura y que cada usuario lea como minimos
-          seis(6) libros por año.
-      </p>
-      <p class="text-justify "> <strong>Objetivos:</strong> Proporcionar el habito de la lectura. Apoyar la consulta de informacion local
-          a los usuarios, manejar la Biblioteca, planear, dirigir y controlar todas las actividades tecnicas de la Biblioteca
-          municipal organizar programas de lectura, tertulias literarias y actividades culturales dentro y fuera de la 
-          Biblioteca.
-      </p>
-      <p class="text-justify"><strong>Metas:</strong> Lograr el incremento y sostenimiento de los indices estadisticos, en lo 
-          relacionado con la consulta y la lectura en la Biblioteca publica municipal.
-      </p>
     </div>
 
      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
